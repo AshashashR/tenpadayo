@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g_drsyz$%_dkssyexcxsmgy&9#mkds%-)!y@nmf0_ymrh3!wnk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['tenpadayo.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['tenpadayo.herokuapp.com', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'new_tenpadayo',
     'cloudinary',
     'crispy_forms',
+    "crispy_bootstrap4",
     'gunicorn'
-
 ]
 
 MIDDLEWARE = [
@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'tenpadayo_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dfm0r7i677j6tv',
-        'HOST': 'ec2-18-233-83-165.compute-1.amazonaws.com',
+        'NAME': 'd124ec2rsj9bku',
+        'HOST': 'ec2-52-205-149-167.compute-1.amazonaws.com',
         'PORT': 5432,
-        'USER': 'lrnyraoyyyjkpw',
-        'PASSWORD': '206c6247a3dd8b5fe67e012e81bdf678d8bf494706723506e2e2b759e47cc032'
+        'USER': 'isovhpgmteafui',
+        'PASSWORD': '2223d086f73967f77570500eb7385abb8aa2c40900c46cc230906fb9682bf252'
     }
 }
 
@@ -157,4 +157,6 @@ LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'start'
 LOGOUT_REDIRECT_URL = 'logout'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
