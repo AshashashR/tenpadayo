@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'tenpadayo_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'db69q4obofv6jb',
-        'HOST': 'cbdhrtd93854d5.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+        'NAME': 'd916s9pkqkq4t6',
+        'HOST': 'ca932070ke6bv1.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
         'PORT': 5432,
-        'USER': 'ubtovifv50n0e0',
-        'PASSWORD': 'p9c3828771189376263e6277bd1c855cdc27a8df30e6b1b961c38484dce67c3c0'
+        'USER': 'u5r02g5onpqb8e',
+        'PASSWORD': 'p6879eca2a5f4c413960b2383549cc04952b2f4ac79e6c8e56d899e0699a6c5fa'
     }
 }
 
